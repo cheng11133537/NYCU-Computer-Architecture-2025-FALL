@@ -1,0 +1,21 @@
+WARNING: ../riscvooo/riscvooo-randdelay-sim.v:154: $readmemh: The behaviour for reg[...] mem[N:0]; $readmemh("...", mem); changed in the 1364-2005 standard. To avoid ambiguity, use mem[0:N] or explicit range parameters $readmemh("...", mem, start, stop);. Defaulting to 1364-2005 behavior.
+VCD info: dumpfile ../tests/build/vmh/riscv-test4-rand.vcd opened for output.
+ RTL-DEBUG : riscv_sim.proc.ctrl.scoreboard : scoreboard X at time 945
+   stalls=1x000 stalls_alu=00010 stalls_mem=00100 stalls_muldiv=1x000
+   wb_alu_lat=00011 wb_mem_lat=00000 wb_mul_lat=00000 stall_hazard=0 accept=1 inst_val_Dhl=1
+   src0=0 pend0=0 lat0=00000 fu0=000 slot0=0000
+   src1=1 pend1=0 lat1=00000 fu1=011 slot1=0010
+ RTL-DEBUG : riscv_sim.proc.ctrl.scoreboard : scoreboard X at time 955
+   stalls=1x000 stalls_alu=00010 stalls_mem=00100 stalls_muldiv=1x000
+   wb_alu_lat=00010 wb_mem_lat=00000 wb_mul_lat=00000 stall_hazard=0 accept=1 inst_val_Dhl=1
+   src0=0 pend0=0 lat0=00000 fu0=000 slot0=0000
+   src1=1 pend1=0 lat1=00000 fu1=011 slot1=0010
+*** PASSED ***
+--------------------------------------------
+ STATS                                      
+--------------------------------------------
+ status     =          1
+ num_cycles =         90
+ num_inst   =         31
+ ipc        = 0.344444
+../riscvooo/riscvooo-randdelay-sim.v:335: $finish called at 995 (1s)
