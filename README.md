@@ -30,6 +30,7 @@
 ### Lab 3: Superscalar RISC-V Processor
 
 本實驗目標為設計一個 Two-wide 的循序執行超純量處理器，使其能在單一週期內發射並執行兩道指令。
+
 **實作重點:**
 * **雙指令分派:** 實作雙指令提取單元，並透過 Steering Logic 動態分配任務給主管線或次管線。
 * **Scoreboard:** 導入計分板技術進行全局的暫存器監控與危險攔截，確保資源不衝突且資料相依性正確。
@@ -37,6 +38,7 @@
 ### Lab 4: Out-of-Order RISC-V Processor
 
 本實驗將處理器升級為支援 Out-of-Order Execution 的架構，允許底層單元不按程式順序執行指令以最大化效能。
+
 **實作重點:**
 * **ROB:** 開發 ROB 機制，允許指令提前執行但必須 In-order Commit，以保證 Precise Exception。
 * **暫存器更名與回復:** 透過 Renaming 避開假性相依，並處理分支預測錯誤時的 Rollback。
@@ -44,6 +46,7 @@
 ### Lab 5: Cache Implementation
 
 本實驗為處理器加入指令快取 (I-Cache) 與資料快取 (D-Cache)，以降低記憶體存取延遲並提升整體系統效能。
+
 **實作重點:**
 * **Cache Controller:** 透過複雜的 FSM 管理 Hit, Miss, Refill 與 Evict 流程，並實踐 Write-back 搭配 Write-allocate 原則。
 * **Victim Cache:** 額外掛載 Victim Cache 降低 Conflict miss，並支援 Direct-mapped 或 Set-associative 的配置彈性。
