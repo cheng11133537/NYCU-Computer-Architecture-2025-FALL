@@ -14,6 +14,7 @@
 ### Lab 1: Integer Multiply/Divide Unit
 
 本實驗目標為設計並實作一個基於 Val/Rdy 介面協定的迭代式整數乘法與除法單元，將兩個 32 位元運算元處理後產生 64 位元結果。
+
 **實作重點:**
 * **迭代式乘除法:** 採用 Radix-4 Booth 演算法大幅縮減乘法部分積數量，除法部分則實踐 Non-restoring division。
 * **介面協定:** 嚴格遵守對 Latency-insensitive 的 Val/Rdy 握手協定，並將資料路徑與控制邏輯解耦。
@@ -21,6 +22,7 @@
 ### Lab 2: Pipelined RISC-V Processor
 
 本實驗將基礎的單週期處理器擴展為 5-stage Pipeline 架構，涵蓋 RV32I 基本指令與部分的 M-extension。
+
 **實作重點:**
 * **危險處理與資料前遞:** 建構完整的 Data Forwarding 網路來繞過 RAW 衝突，大幅減少硬體 Stall 並提升系統的 IPC。
 * **CSR 暫存器:** 實作基礎的控制與狀態暫存器讀寫，以支援後續的系統測試與診斷功能。
